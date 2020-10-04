@@ -1,0 +1,26 @@
+{
+  "name": "necssary",
+  "version": "0.1.0",
+  "description": "Necessary styles for a strong foundation of your user interface.",
+  "main": "dist/styles.min.css",
+  "style": "dist/styles.min.css",
+  "scripts": {
+    "start": "run-s clean css watch",
+    "build": "run-s clean build:css",
+    "clean": "rimraf dist/*",
+    "css": "postcss src/index.css -o dist/styles.css",
+    "build:css": "postcss src/index.css -o dist/styles.min.css --no-map --env production",
+    "watch": "onchange 'src/**/*.css' -- run-s css"
+  },
+  "dependencies": {
+    "normalize.css": "^8.0.1"
+  },
+  "devDependencies": {
+    "cssnano": "^4.1.10",
+    "npm-run-all": "^4.1.5",
+    "onchange": "^7.0.2",
+    "postcss-cli": "^8.0.0",
+    "postcss-import": "^12.0.1",
+    "rimraf": "^3.0.2"
+  }
+}
