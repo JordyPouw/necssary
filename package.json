@@ -4,6 +4,7 @@
   "description": "Necessary styles for a strong foundation of your user interface.",
   "main": "dist/styles.min.css",
   "style": "dist/styles.min.css",
+  "repository": "github:jordypouw/necssary",
   "scripts": {
     "start": "run-s clean css watch",
     "build": "run-s clean build:css",
