@@ -1,6 +1,11 @@
 @import 'necssary';
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;500;900&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@700&display=swap');
+:root {
+  --white: #F2F2F2;
+  --red: #EB5757;
+  --block-width: min(100%, 750px);
+}
 
 .container {
   display: flex;
@@ -8,20 +13,42 @@
   align-items: center;
   justify-content: center;
   height: 100vh;
-  color: #F2F2F2;
-  background: #EB5757;
+  padding: 1.25rem;
+  color: var(--white);
+  background: var(--red);
   font-family: 'Rubik', sans-serif;
+  font-weight: 300;
 }
 
-.necssary-svg {
-  width: 100%;
-  max-width: 50vw;
+.header {
+  width: var(--block-width);
+  margin-top: auto;
+}
+
+.header__title {
+  font-size: clamp(4rem, 10vw, 18rem);
+  font-weight: 900;
+}
+
+.header__title .spacing { letter-spacing: 1vw; }
+
+.header__subtitle {
+  margin-bottom: 0.625rem;
+  font-size: clamp(1.2rem, 2.5vw, 4rem);
+  font-weight: 300;
+}
+
+.header__version {
+  font-size: clamp(1rem, 1vw, 2rem);
+}
+
+.view-elements {
+  width: var(--block-width);
+  margin-top: auto;
+  font-size: clamp(1rem, 1vw, 2rem);
 }
 
 .link {
-  width: 100%;
-  max-width: 50vw;
-  margin-top: 50px;
+  font-weight: 500;
   text-decoration: none;
-  font-size: clamp(0.75rem, 2.5vw, 1rem);
 }
