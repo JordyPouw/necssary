@@ -1,54 +1,96 @@
 @import 'necssary';
-@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;500;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 :root {
+  --black: #333;
   --white: #F2F2F2;
-  --red: #EB5757;
+  --bg-gradient: linear-gradient(to right, #134e5e, #71b280);
+  --yellow: #ebe057;
+  --grey: #e6e6e6;
+  --padding: 1.25rem;
   --block-width: min(100%, 750px);
 }
 
 .container {
+  font-family: 'Arvo', sans-serif;
+  font-weight: 400;
+}
+
+/* header */
+.container.header {
+  display: flex;
+  flex-direction: column;
+  height: min(100vh, 500px);
+  color: var(--white);
+  background: var(--bg-gradient);
+}
+
+.header .top {
+  display: flex;
+  justify-content: flex-end;
+  height: 3.75rem;
+  background: rgba(0,0,0,0.1);
+}
+
+.header .top__item {
+  display: flex;
+  place-items: center;
+  padding-left: var(--padding);
+  padding-right: var(--padding);
+  font-size: clamp(0.875rem, 1vw, 1rem);
+  text-decoration: none;
+}
+
+.header .top__item.logo {
+  margin-right: auto;
+  font-size: clamp(1.5rem, 2.5vw, 2rem);
+  font-weight: 700;
+}
+.header .top__item.logo .css { color: var(--yellow); }
+.header .top__item.logo .spacing { letter-spacing: 0.125rem; }
+
+.header .heading {
+  width: min(100%, 800px);
+  margin: auto;
+  padding: var(--padding);
+  font-size: clamp(2rem, 4vw, 5rem);
+  font-weight: 400;
+}
+
+/* docs */
+.container.docs {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  height: 100vh;
-  padding: 1.25rem;
-  color: var(--white);
-  background: var(--red);
-  font-family: 'Rubik', sans-serif;
-  font-weight: 300;
+  padding: 2.5rem;
+  color: var(--black);
 }
 
-.header {
+.docs .section {
   width: var(--block-width);
-  margin-top: auto;
+  margin-bottom: 2.5rem;
 }
 
-.header__title {
-  font-size: clamp(4rem, 10vw, 18rem);
-  font-weight: 900;
-}
-
-.header__title .spacing { letter-spacing: 1vw; }
-
-.header__subtitle {
-  margin-bottom: 0.625rem;
+.docs .section__title {
   font-size: clamp(1.2rem, 2.5vw, 4rem);
-  font-weight: 300;
+  font-weight: 400;
 }
 
-.header__version {
+.docs .section__text {
+  margin-top: 0.3125rem;
   font-size: clamp(1rem, 1vw, 2rem);
 }
 
-.view-elements {
-  width: var(--block-width);
-  margin-top: auto;
+.docs .code-block {
+  margin: 0; /* this should be in the library. */
+  margin-top: 0.624rem;
+  border-radius: 0.1875rem;
+  padding: var(--padding);
+  background: var(--grey);
+}
+
+.docs .text-block {
   font-size: clamp(1rem, 1vw, 2rem);
 }
 
-.link {
-  font-weight: 500;
-  text-decoration: none;
-}
+.docs .text-block p { margin-top: 0.625rem; }
