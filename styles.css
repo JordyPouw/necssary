@@ -60,5 +60,7 @@
   padding: var(--padding);
   background: var(--grey);
 }.docs .text-block {
+  font-family: sans-serif;
   font-size: clamp(1rem, 1vw, 2rem);
+  line-height: 1.8;
 }.docs .text-block p { margin-top: 0.625rem; }
