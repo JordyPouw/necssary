@@ -1,6 +1,6 @@
 {
   "name": "necssary",
-  "version": "0.4.0",
+  "version": "0.4.1",
   "description": "Necessary styles for a strong foundation of your user interface.",
   "main": "dist/styles.min.css",
   "style": "dist/styles.min.css",
