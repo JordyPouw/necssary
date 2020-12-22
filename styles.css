@@ -50,11 +50,7 @@
 }.docs .section__title {
   font-size: clamp(1.2rem, 2.5vw, 4rem);
   font-weight: 400;
-}.docs .section__text {
-  margin-top: 0.3125rem;
-  font-size: clamp(1rem, 1vw, 2rem);
 }.docs .code-block {
-  margin: 0; /* this should be in the library. */
   margin-top: 0.624rem;
   border-radius: 0.1875rem;
   padding: var(--padding);

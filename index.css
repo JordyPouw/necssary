@@ -76,13 +76,7 @@
   font-weight: 400;
 }
 
-.docs .section__text {
-  margin-top: 0.3125rem;
-  font-size: clamp(1rem, 1vw, 2rem);
-}
-
 .docs .code-block {
-  margin: 0; /* this should be in the library. */
   margin-top: 0.624rem;
   border-radius: 0.1875rem;
   padding: var(--padding);
