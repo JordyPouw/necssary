@@ -2,10 +2,18 @@
 
 -----
 
+#### [0.4.0] - 2020-12-22
+
+- Have the actual updated dist file for package.
+
+-----
+
 #### [0.3.0] - 2020-12-22
 
 - Moved test file to gh-page branch.
 - Added `pre` to margin reset.
+
+*Does not has the updated dist file.*
 
 -----
 
