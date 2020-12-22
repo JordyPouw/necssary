@@ -2,6 +2,12 @@
 
 -----
 
+#### [0.4.1] - 2020-12-22
+
+- Update postcss dev-dependencies
+
+-----
+
 #### [0.4.0] - 2020-12-22
 
 - Have the actual updated dist file for package.
