@@ -34,9 +34,8 @@ Import `necssary` in your index file and create another file for your project sp
  */
 
 body {
-  color: var(--body-color);
   font-family: var(--body-font);
-  font-weight: var(--body-weight);
+  font-weight: var(--body-font-weight);
   line-height: var(--body-line-height);
 }
 
