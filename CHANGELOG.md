@@ -2,6 +2,13 @@
 
 -----
 
+#### [0.5.0] - 2021-06-29
+
+- Remove default font-size on body
+- Update readme.
+
+-----
+
 #### [0.4.1] - 2020-12-22
 
 - Update postcss dev-dependencies
