@@ -89,4 +89,8 @@
   line-height: 1.8;
 }
 
+.docs .text-block a {
+  color: #71b280;
+}
+
 .docs .text-block p { margin-top: 0.625rem; }
